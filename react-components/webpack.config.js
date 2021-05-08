@@ -5,7 +5,7 @@ const path = require("path");
 const deps = require("./package.json").dependencies;
 module.exports = {
   output: {
-    publicPath: "http://localhost:8080/",
+    publicPath: "http://localhost:8081/",
   },
 
   resolve: {
@@ -14,7 +14,7 @@ module.exports = {
 
   devServer: {
     contentBase: path.join(__dirname, "public"),
-    port: 8080,
+    port: 8081,
     headers: {
       "Access-Control-Allow-Origin": "*",
       "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, PATCH, OPTIONS",
@@ -48,7 +48,7 @@ module.exports = {
 
   plugins: [
     new ModuleFederationPlugin({
-      name: "reactComponents",
+      name: "react",
       filename: "remoteEntry.js",
       remotes: {},
       exposes: {

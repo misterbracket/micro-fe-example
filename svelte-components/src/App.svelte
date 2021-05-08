@@ -1,6 +1,6 @@
 <script>
-  import Header from './Header'
+  import SvelteComponent from "./components/SvelteComponent";
 </script>
 
-<Header />
+<SvelteComponent />
 <div>Hello from Svelte</div>
