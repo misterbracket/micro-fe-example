@@ -1,6 +1,6 @@
 import "./index.css";
 import VanillaReactComponent from "react/VanillaReactComponent";
-import vanillaSvelteComponent from "svelte/VanillaSvelteComponent";
+import VanillaSvelteComponent from "svelte/VanillaSvelteComponent";
 
 VanillaReactComponent(".react");
-vanillaSvelteComponent(".svelte");
+VanillaSvelteComponent(".svelte");
